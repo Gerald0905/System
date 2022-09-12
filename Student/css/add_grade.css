@@ -1,0 +1,119 @@
+*{
+			margin: 0;
+			padding: 0;
+			font-family: "Roboto", sans-serif;
+		}
+		
+		table{
+			width: 100%;
+			
+		}
+		td{
+			padding: 10px 2px;
+		}
+		
+		.head{
+			font-weight: bold;
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+    	.footer{
+			margin: 30px 15px;
+			text-decoration: none;
+			font-size: 13px;
+			transition: .3s ease;
+		}
+		
+		.footer a{
+			color: black;
+		}
+		.footer i{
+			margin-right: 8px;
+			margin-left: 8px;
+		}
+		.footer:hover{
+			text-decoration: underline;
+		}
+		input[type="number"]{
+			width: 87px;
+			border: 1px solid gray;
+			padding: 5px 5px;
+		}
+		input[type="text"]{
+			width: 100%;
+			border: none;
+		}
+		.btn button{
+			text-decoration: none;
+		}
+		
+		
+		.lrn{
+			text-align: center;
+		}
+		.secQuarter{
+			float: right;
+		}
+		.secQuarter:hover{
+			text-decoration: underline;
+		}
+		.btn3 {
+			font-weight: bold;
+			padding: 8px 8px;
+			border-radius: 10px;
+			color: white;
+			background-color: green;
+			transition: .4s ease;
+		}
+		.btn3 a{
+			
+			text-decoration:none;
+			color:white;
+		}
+		.content{
+			font-size:14px;
+		}
+		.active{
+			text-decoration: none;
+			color: white;
+			padding: 2px 2px;
+			border-radius: 5px;
+			
+		}
+		
+		.nonactive{
+			text-decoration: none;
+			color: black;
+			transition: .3s ease;
+			border-radius: 5px;
+			padding: 5px 5px;
+			border: 1px solid transparent;
+		}
+		.nonactive:hover{
+			border: 1px solid gray;
+		}
+		.filter{
+			border-top: 1px solid gray;
+			
+			
+		}
+		.content1{
+			font-size:13px;
+		}
+		
+		.content1:hover{
+			background-color:#e0e0e0;
+		
+			
+  		
+		}
+		.avg{
+			padding: 5px 5px;
+			margin-top: 30px;
+		}
+		@media screen and (max-width:600px) {
+			
+				.container{
+					margin-top:100px;
+				}
+		}

@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	
+}
+.container{
+	margin: 120px 30px 0 50px;
+}
+form{
+	padding: 10px 10px;
+}
+
+table{
+	border-collapse: collapse;
+}
+table td{
+	padding: 8px 8px;
+}
+table .head{
+	font-size: 13px;
+	font-weight: bold;
+}
+.header h4{
+	padding: 10px 20px;
+	background-color:#37474f;
+	width:50%;
+	color: white;
+}
+
+.footer-links{
+	margin-top: 30px;
+}
+input, select{
+	width: 170px;
+	padding: 6px 6px;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+input[type="submit"]{
+	text-decoration: none;
+	margin-left: 605px;
+	margin-bottom: 20px;
+	width: 200px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #002366;
+	padding: 10px 10px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 10px;		
+}
+input[type="submit"]:hover{
+	border: none;
+	background: red;
+	color: white;
+	transition: .3s;
+}
+select{
+	padding: 5px 5px;
+	width: 183px;
+}
+.back-btn{
+	margin-top:-50px;
+}
+.back-btn a{
+	text-decoration: none;
+	font-size: 10px;
+	color: black;
+	padding: 10px 10px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+.back-btn a:hover{
+	background: orange;
+	color: white;
+	transition: .3s;
+	border: none;
+}
+form .desc{
+	font-size: 10px;
+	text-align: justify-all;
+}
+table{
+	border-bottom: 2px solid #002366;
+}
+@media screen and (max-width:1300px) {
+.header h4{
+display: block !important;
+}
+
+
+}
+@media screen and (max-width:700px) {
+input[type="submit"]{
+text-decoration: none;
+margin-left: 220px;
+margin-bottom: 20px;
+width: 200px;
+font-size: 12px;
+font-weight: bold;
+color: #002366;
+padding: 10px 10px;
+background-color: white;
+border: 1px solid gray;
+border-radius: 10px;		
+}
+.container{
+margin-left: 20px;
+}
+
+}

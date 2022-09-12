@@ -1,0 +1,76 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container{
+			margin:100px 100px;
+			
+		
+
+		}
+		.header h4{
+			font-size: 20px;
+			width: 350px;
+			text-transform: uppercase;
+		}
+		.head{
+			text-transform: uppercase;
+			font-weight: bold;
+			border-bottom:2px solid gray;
+		}
+		.gpa{
+			background-color: grey;
+		}
+		.content{
+			font-size: 13px;
+			
+		}
+		select{
+			padding: 5px 5px;
+			border-radius: 8px;
+		}
+		.btn{
+			font-size: 13px;
+			transition: .4s ease;
+			padding:4px 5px;
+		}
+		.btn:hover{
+			text-decoration: underline;
+		}
+
+@media screen and (max-width:480px)
+	{
+			.container{
+			margin:100px 20px;
+
+		}
+		.container h4{
+			margin-top: 200px;
+		}
+		.content{
+			font-size: 8px;
+		}
+		.btn
+		{
+			
+			font-size: 13px;
+			transition: .4s ease;
+			padding:4px 5px;
+		}
+		.content .table{
+			margin-top: -100px;
+		}
+		option
+		{
+			font-size:12px;
+		}
+		select
+		{
+			margin-left:-20px;
+			padding: 5px 5px;
+			border-radius: 8px;
+			width: 80%;
+		}
+	
+	}

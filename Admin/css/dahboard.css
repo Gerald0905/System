@@ -1,0 +1,95 @@
+
+
+    
+
+
+    
+
+.board{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E1E5EA;
+    width: 80%;
+    border-radius: 10px;
+}
+.board > div{
+    font-size: 15px;
+    margin: 15px 20px;
+    padding:20px;
+    width: 200px;
+    border-radius: 10px;
+    color:white;
+    box-shadow: gray;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px #888888;
+    font-weight: bolder;
+}
+
+.count{
+    background-color: #003f5c;
+}
+.count2{
+    background-color: #58508d;
+}
+.count3{
+    background-color: #bc5090;
+}
+.count4{
+    background-color: #ff6361;
+}
+.count5{
+    background-color: #ffa600;
+}
+
+.board input{
+    width: 40px;
+    float: right;
+    color:black;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.chart{
+    background-color:#F0E5CF;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+#mychart
+{
+    max-width: 800px;
+    height:400px;
+    margin:20px auto;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .board > div {
+        width:300px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .board > div {
+        width:400px;
+        margin:10px 40px;
+    }
+    
+}
+
+@media screen and (max-width:960px) {
+    .board > div {
+        width:500px;
+       
+    }
+    
+}
+
