@@ -129,7 +129,7 @@ $rec = mysqli_fetch_assoc($sql);
 					$stud_lrn = $_POST['stud_lrn'];
 					$lrnCount = strlen($stud_lrn);
 					$email_address = $_POST['email_address'];
-					$hashAutoPassword = md5($_POST['stud_password']);
+					$hashAutoPassword = ($_POST['stud_password']);
 
 					if($lrnCount == 12){	
 						$update = mysqli_query($conn, "UPDATE tbl_studentaccount SET stud_lrn = '$stud_lrn', stud_password = '$hashAutoPassword' where stud_ID = '$sid'"); 

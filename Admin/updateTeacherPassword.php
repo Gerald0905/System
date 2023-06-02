@@ -136,7 +136,7 @@ $IDcount = mysqli_fetch_assoc($sql1);
 					$teacher_ID = $_POST['teacher_ID'];
 					$teacher_email_address = $_POST['teacher_email_address'];
 					$teacher_username = $_POST['teacher_username'];
-					$teacher_password = md5($_POST['teacher_password']);
+					$teacher_password = ($_POST['teacher_password']);
 
 					$update = mysqli_query($conn, "UPDATE tbl_teacheraccount SET teacher_email_address = '$teacher_email_address', teacher_username = '$teacher_username', teacher_password = '$teacher_password' where teacher_ID = '$tid'"); 
 

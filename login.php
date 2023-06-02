@@ -7,7 +7,7 @@ session_start();
 if(isset($_REQUEST['studSubmit'])){
 	$stud_lrn = mysqli_real_escape_string($conn, $_POST['stud_lrn']);
 	$password = mysqli_real_escape_string($conn, $_POST['stud_password']);
-	$stud_password = md5($password);
+	$stud_password = ($password);
 
 	$studresult = mysqli_query($conn, "SELECT * FROM tbl_studentaccount WHERE stud_lrn = '$stud_lrn' AND stud_password = '$stud_password'");
 
@@ -71,7 +71,7 @@ if(isset($_REQUEST['adminSubmit'])){
 if(isset($_REQUEST['teacherSubmit'])){
 	$teacher_username = mysqli_real_escape_string($conn, $_POST['teacher_username']);
 	$password = mysqli_real_escape_string($conn, $_POST['teacher_password']);
-	$teacher_password = md5($password);
+	$teacher_password = ($password);
 
 	$teacherresult = mysqli_query($conn, "SELECT * FROM tbl_teacheraccount as t1 inner join tbl_teacher as t2 on t1.teacher_ID = t2.teacher_ID WHERE t1.teacher_username = '$teacher_username' AND t1.teacher_password = '$teacher_password' AND t2.teacher_status = 'Active'");
 
@@ -102,7 +102,7 @@ if(isset($_REQUEST['teacherSubmit'])){
 	if(isset($_REQUEST['subteacherSubmit'])){
 		$teacher_username = mysqli_real_escape_string($conn, $_POST['teacher_username']);
 		$password = mysqli_real_escape_string($conn, $_POST['teacher_password']);
-		$teacher_password = md5($password);
+		$teacher_password = ($password);
 	
 		$teacherresult = mysqli_query($conn, "SELECT * FROM tbl_subteacheraccount as t1 inner join tbl_subjectteacher as t2 on t1.subteacher_ID = t2.teacher_ID WHERE t1.teacher_username = '$teacher_username' AND t1.teacher_password = '$teacher_password' AND t2.teacher_status = 'Active'");
 	
